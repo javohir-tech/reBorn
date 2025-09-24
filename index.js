@@ -1,22 +1,14 @@
-function user(name, age) {
-    this.name = name;
-    this.age = age
+function bobo(){
+    let a =10 ;
+    function ota(){
+        let  b = 20;
+        console.log(a)
+        function nevara(){
+            console.log(a , "salom")
+        }
+        nevara()
+    }
+    ota()
 }
 
-const newUser = new user("Javohir", 21);
-console.log(newUser);
-
-const car = function (model, year) {
-    this.model = model;
-    this.year = year;
-}
-
-const newCar = new car("nexia", 2015);
-
-console.log(newCar)
-
-const ArrowFunction = () => {
-    console.log(this)
-}
-
-ArrowFunction()
+bobo()
