@@ -1,14 +1,9 @@
-function bobo(){
-    let a =10 ;
-    function ota(){
-        let  b = 20;
-        console.log(a)
-        function nevara(){
-            console.log(a , "salom")
-        }
-        nevara()
-    }
-    ota()
-}
+const user = {
+    name: "Javohir",
+    age: 21,
+    firstName: "Suvonov"
+};
 
-bobo()
+for (key in user) {
+    console.log(key, ":", user[key])
+}
