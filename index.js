@@ -1,7 +1,4 @@
-"use strict";
+let age = prompt("hello how old are you");
 
-function test(){
-    console.log(this)
-}
-
-test()
+// console.log(age)
+alert("you are age is " +  age);
