@@ -1,11 +1,9 @@
-const fruits = ["apple", "banana", "cherry"];
-
-console.log("for...in")
-for(let i in fruits){
-    console.log(i , ":" , fruits[i])
+const user = {
+    name:"Javohir",
+    age:21
 }
 
-console.log("for...of")
-for(let i of fruits){
-    console.log(i)
+console.log(Object.entries(user))
+for(let [key , val] of Object.entries(user)){
+    console.log(key , val)
 }
