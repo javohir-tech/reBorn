@@ -1,22 +1,22 @@
-demo()
-function demo() {
-    console.log("salom")
-    // console.log(this)
-}
-
-
-let newFunction = function () {
-    console.log("function expretion")
-}
-
-newFunction()
-
-
-const User = (name , age) => {
+function user(name, age) {
     this.name = name;
     this.age = age
 }
 
-const newUser = new User("javohir" , 21)
+const newUser = new user("Javohir", 21);
+console.log(newUser);
 
-console.log(newUser)// error
+const car = function (model, year) {
+    this.model = model;
+    this.year = year;
+}
+
+const newCar = new car("nexia", 2015);
+
+console.log(newCar)
+
+const ArrowFunction = () => {
+    console.log(this)
+}
+
+ArrowFunction()
