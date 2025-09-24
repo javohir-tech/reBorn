@@ -1,4 +1,12 @@
-let age = prompt("hello how old are you");
+const rang = "qizil";
 
-// console.log(age)
-alert("you are age is " +  age);
+switch (rang) {
+    case "yashil":
+        console.log(false);
+        break
+    case "qizil":
+        console.log(true)
+        break
+    default:
+        console.log("yoq")
+}
