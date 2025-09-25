@@ -1,9 +1,10 @@
-const user = {
-    name:"Javohir",
-    age:21
+function myCar(model, color, make) {
+    this.make = make;
+    this.model = model;
+    this.color = color
 }
 
-console.log(Object.entries(user))
-for(let [key , val] of Object.entries(user)){
-    console.log(key , val)
-}
+const obj = new myCar("nexia" , 2015 , "black");
+console.log(obj.model)
+
+console.log(obj)
