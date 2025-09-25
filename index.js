@@ -1,17 +1,10 @@
-const person = {
-    name: "Javohir",
-    firstName: "Suvonov",
-    get fullName() {
-        return this.name + " " + this.firstName;
-    },
-    set update(value) {
-        const arr = value.split(" ");
-        this.name = arr[0];
-        this.firstName = arr[1]
-    }
-}
+const fruit = {name :"apple"};
+const anotherFruits = fruit;
 
-console.log(person.fullName);
-person.update =  "Ulug'bek Suvonov";
-console.log(person.fullName);
-console.log(person)
+console.log(fruit==anotherFruits)
+console.log(fruit===anotherFruits)
+
+anotherFruits.name = "grape"
+console.log(anotherFruits)
+console.log(fruit==anotherFruits)
+console.log(fruit===anotherFruits)
