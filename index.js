@@ -1,12 +1,10 @@
-const Animal = {
-    type : "Default qiymat",
-    print(){
-        console.log(this.type)
-    }
-}
+const myObj = {};
 
-const obj = Object.create(Animal);
-obj.print()
-const obj2 = Object.create(Animal);
-obj2.type = "Baliq";
-obj2.print()
+const color = "red";
+const key = "age"
+
+myObj.name = "Javohir";
+myObj.color = color;
+myObj[key] = 21;
+
+console.log(myObj)
