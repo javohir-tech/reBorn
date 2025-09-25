@@ -1,10 +1,12 @@
-function myCar(model, color, make) {
-    this.make = make;
-    this.model = model;
-    this.color = color
+const Animal = {
+    type : "Default qiymat",
+    print(){
+        console.log(this.type)
+    }
 }
 
-const obj = new myCar("nexia" , 2015 , "black");
-console.log(obj.model)
-
-console.log(obj)
+const obj = Object.create(Animal);
+obj.print()
+const obj2 = Object.create(Animal);
+obj2.type = "Baliq";
+obj2.print()
